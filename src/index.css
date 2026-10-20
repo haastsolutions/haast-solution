@@ -1,0 +1,99 @@
+/*
+  Global styles.
+
+  The site is a light-only design (page background is forced to #ebe9e5), so the
+  old Vite-template dark-mode variables / `color-scheme: light dark` were removed:
+  they made text without an explicit colour turn light-grey on a light page for
+  visitors whose OS is in dark mode.
+*/
+
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #ebe9e5;
+  /* Horizontal page margin shared by nav, sections and footer (matches the hero's own padding). */
+  --page-gutter: clamp(20px, 3.2vw, 48px);
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+}
+
+body {
+  font-family: 'Geist', system-ui, -apple-system, sans-serif;
+}
+
+/* Every page spans the full browser window. */
+#root {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+/* Visible keyboard focus everywhere (many controls use inline styles) */
+:focus-visible {
+  outline: 2px solid #e04f32;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}
