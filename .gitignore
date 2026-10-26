@@ -26,3 +26,6 @@ dist-ssr
 # local env (booking endpoint etc.)
 .env
 .env.local
+
+.vercel
+.env*
