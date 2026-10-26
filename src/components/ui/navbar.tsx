@@ -16,8 +16,10 @@ export default function Navbar() {
   return (
     <nav className="hs-nav" aria-label="Primary">
       <Link to="/" className="hs-nav__brand">
-        <span className="hs-nav__mark" aria-hidden="true">
-          ✦
+        <span className="hs-nav__mark" aria-hidden="true" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center" }}>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M4 5v14M20 5v14M4 12h16" />
+          </svg>
         </span>
         Haast
       </Link>

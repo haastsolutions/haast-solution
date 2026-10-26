@@ -16,7 +16,7 @@ export default function AboutUs() {
       <section style={{ width: "100%", boxSizing: "border-box", padding: "100px var(--page-gutter)", display: "flex", flexWrap: "wrap", gap: "60px", alignItems: "flex-start" }}>
         
         {/* Left Side: Content */}
-        <div style={{ flex: "1 1 500px" }}>
+        <div style={{ flex: "1 1 500px", textAlign: "left" }}>
           <h1 style={{ fontSize: "clamp(48px, 6vw, 64px)", fontWeight: "700", lineHeight: "1.05", letterSpacing: "-0.03em", color: "#151514", marginBottom: "24px", maxWidth: "450px" }}>
             Why we chose Indore as our home.
           </h1>
@@ -25,21 +25,21 @@ export default function AboutUs() {
           </p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
-            <div style={{ borderLeft: "2px solid #e04f32", paddingLeft: "20px" }}>
+            <div style={{ borderLeft: "2px solid #e04f32", paddingLeft: "20px", textAlign: "left" }}>
               <h3 style={{ fontSize: "18px", fontWeight: "700", color: "#151514", marginBottom: "12px" }}>A deep bench of graduate talent</h3>
               <p style={{ fontSize: "14.5px", color: "rgba(21, 21, 20, 0.7)", lineHeight: "1.6", margin: 0 }}>
                 Indore is a Tier-2 city home to IIT Indore and IIM Indore, with many more colleges across the city and nearby Ujjain, Dewas, and Bhopal.
               </p>
             </div>
             
-            <div style={{ borderLeft: "2px solid #e04f32", paddingLeft: "20px" }}>
+            <div style={{ borderLeft: "2px solid #e04f32", paddingLeft: "20px", textAlign: "left" }}>
               <h3 style={{ fontSize: "18px", fontWeight: "700", color: "#151514", marginBottom: "12px" }}>A natural fit for US hours</h3>
               <p style={{ fontSize: "14.5px", color: "rgba(21, 21, 20, 0.7)", lineHeight: "1.6", margin: 0 }}>
                 India Standard Time runs roughly 9.5 to 13.5 hours ahead of US time zones, depending on the season. Our teams work evenings and nights, so your customers reach a live person during US days and after hours.
               </p>
             </div>
 
-            <div style={{ borderLeft: "2px solid #e04f32", paddingLeft: "20px" }}>
+            <div style={{ borderLeft: "2px solid #e04f32", paddingLeft: "20px", textAlign: "left" }}>
               <h3 style={{ fontSize: "18px", fontWeight: "700", color: "#151514", marginBottom: "12px" }}>Everything under one roof</h3>
               <p style={{ fontSize: "14.5px", color: "rgba(21, 21, 20, 0.7)", lineHeight: "1.6", margin: 0 }}>
                 Recruiting, training, quality, and management all sit in Indore, so decisions are made where the work happens.
@@ -48,16 +48,18 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* Right Side: Transparent Lanyard Badge Showcase */}
-        <div style={{ flex: "1 1 400px", display: "flex", flexDirection: "column", alignItems: "center" }}>
-          <div style={{ width: "100%", height: "420px", position: "relative" }}>
+        {/* Right Side: Leadership Lanyard Badges Showcase (Side by Side) */}
+        <div style={{ flex: "1 1 500px", display: "flex", flexDirection: "row", flexWrap: "wrap", gap: "30px", justifyContent: "center", alignItems: "center" }}>
+          
+          {/* Badge 1: Dhananjay Jain */}
+          <div style={{ flex: "1 1 210px", maxWidth: "240px", height: "420px", position: "relative" }}>
             <LanyardBadge 
               height="420px" 
               cardWidth={210}
-              title="HAAST FOUNDER"
+              title="HEAD OF OPERATIONS"
               subtitle="Indore HQ · 2026"
-              name="Mohit Bhararde"
-              role="FOUNDER & CEO"
+              name="Dhananjay Jain"
+              role=""
               strapText="haast solution pvt ltd"
               strapLabel="EXECUTIVE HQ"
               strapColor="#141312"
@@ -65,11 +67,29 @@ export default function AboutUs() {
               cardColor="#111113"
             />
           </div>
+
+          {/* Badge 2: Krishn Kumar Patel */}
+          <div style={{ flex: "1 1 210px", maxWidth: "240px", height: "420px", position: "relative" }}>
+            <LanyardBadge 
+              height="420px" 
+              cardWidth={210}
+              title="MANAGING DIRECTOR"
+              subtitle="Indore HQ · 2026"
+              name="Krishn Kumar Patel"
+              role=""
+              strapText="haast solution pvt ltd"
+              strapLabel="EXECUTIVE HQ"
+              strapColor="#141312"
+              inkColor="#d4af37"
+              cardColor="#111113"
+            />
+          </div>
+
         </div>
       </section>
 
-      {/* Middle Section: Global Clients */}
-      <section style={{ width: "100%", boxSizing: "border-box", padding: "40px var(--page-gutter) 80px" }}>
+      {/* Middle Section: Global Clients (Properly Left-Aligned) */}
+      <section style={{ width: "100%", boxSizing: "border-box", padding: "40px var(--page-gutter) 80px", textAlign: "left" }}>
         <h2 style={{ fontSize: "clamp(36px, 5vw, 48px)", fontWeight: "700", lineHeight: "1.1", letterSpacing: "-0.03em", color: "#151514", marginBottom: "16px", maxWidth: "600px" }}>
           One headquarters, clients across the globe.
         </h2>
@@ -79,7 +99,7 @@ export default function AboutUs() {
 
         <div style={{ display: "flex", flexWrap: "wrap", border: "1px solid rgba(21,21,20,0.1)", borderRadius: "16px", overflow: "hidden" }}>
           
-          <div style={{ flex: "1 1 250px", padding: "32px", borderRight: "1px solid rgba(21,21,20,0.1)", boxSizing: "border-box" }}>
+          <div style={{ flex: "1 1 250px", padding: "32px", borderRight: "1px solid rgba(21,21,20,0.1)", boxSizing: "border-box", textAlign: "left" }}>
             <div style={{ width: "32px", height: "32px", backgroundColor: "#e04f32", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "24px" }}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
             </div>
@@ -88,7 +108,7 @@ export default function AboutUs() {
             <p style={{ fontSize: "14px", color: "rgba(21,21,20,0.65)", lineHeight: "1.6", margin: 0 }}>Delivery, training, quality, and management.</p>
           </div>
 
-          <div style={{ flex: "1 1 250px", padding: "32px", borderRight: "1px solid rgba(21,21,20,0.1)", boxSizing: "border-box" }}>
+          <div style={{ flex: "1 1 250px", padding: "32px", borderRight: "1px solid rgba(21,21,20,0.1)", boxSizing: "border-box", textAlign: "left" }}>
             <div style={{ width: "32px", height: "32px", backgroundColor: "rgba(21,21,20,0.05)", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "24px" }}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e04f32" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
             </div>
@@ -96,7 +116,7 @@ export default function AboutUs() {
             <p style={{ fontSize: "14px", color: "rgba(21,21,20,0.65)", lineHeight: "1.6", margin: 0 }}>Home-service and emergency-response businesses.</p>
           </div>
 
-          <div style={{ flex: "1 1 250px", padding: "32px", borderRight: "1px solid rgba(21,21,20,0.1)", boxSizing: "border-box" }}>
+          <div style={{ flex: "1 1 250px", padding: "32px", borderRight: "1px solid rgba(21,21,20,0.1)", boxSizing: "border-box", textAlign: "left" }}>
             <div style={{ width: "32px", height: "32px", backgroundColor: "rgba(21,21,20,0.05)", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "24px" }}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e04f32" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
             </div>
@@ -104,7 +124,7 @@ export default function AboutUs() {
             <p style={{ fontSize: "14px", color: "rgba(21,21,20,0.65)", lineHeight: "1.6", margin: 0 }}>Support delivered seamlessly from Indore.</p>
           </div>
 
-          <div style={{ flex: "1 1 250px", padding: "32px", boxSizing: "border-box" }}>
+          <div style={{ flex: "1 1 250px", padding: "32px", boxSizing: "border-box", textAlign: "left" }}>
             <div style={{ width: "32px", height: "32px", backgroundColor: "rgba(21,21,20,0.05)", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "24px" }}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e04f32" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
             </div>
@@ -116,7 +136,7 @@ export default function AboutUs() {
       </section>
 
       {/* Bottom Section: Founder's Note (Properly Centered & Aligned) */}
-      <section style={{ maxWidth: "800px", margin: "0 auto", padding: "60px 24px 120px 24px" }}>
+      <section style={{ maxWidth: "800px", margin: "0 auto", padding: "60px 24px 120px 24px", textAlign: "left" }}>
         <span style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "rgba(21, 21, 20, 0.4)", fontFamily: "'Courier New', Courier, monospace", display: "block", marginBottom: "24px", fontWeight: "700" }}>FOUNDER'S NOTE</span>
         <h2 style={{ fontSize: "clamp(42px, 5vw, 64px)", fontWeight: "700", lineHeight: "1.05", letterSpacing: "-0.03em", color: "#151514", marginBottom: "32px" }}>
           Started with absolute precision.<br />Stayed with one rule.
